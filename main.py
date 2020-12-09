@@ -43,6 +43,8 @@ def respond(voice_data):
         url = 'https://www.google.com/maps/dir/' + start_search + '/' + end_search
         webbrowser.get().open(url)
         print('Here are directions from ' + start + ' to ' + end)
+    if 'exit' in voice_data:
+        exit()
 
 
 time.sleep(1)
