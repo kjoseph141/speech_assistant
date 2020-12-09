@@ -43,4 +43,5 @@ Traversy Media
 https://www.youtube.com/watch?v=x8xjj6cR9Nc
 
 ## Contact
-[Kevin Joseph](www.linkedin.com/in/kfjoseph) - feel free to contact me!
+Kevin Joseph 
+[www.linkedin.com/in/kfjoseph] - feel free to contact me!
