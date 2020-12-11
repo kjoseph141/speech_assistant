@@ -7,12 +7,20 @@ import os
 import random
 from gtts import gTTS
 
-
+# Initialize speech_recognition recognizer
 rec = sr.Recognizer()
 
 
-
 def record(ask=False):
+    """
+    Records voice using default microphone and returns voice as text
+
+    Args:
+        ask (bool, optional): [Additional question to prompt user]. Defaults to False.
+
+    Returns:
+        [string]: [text from recording voice]
+    """
 
     with sr.Microphone() as source:
 
@@ -38,6 +46,14 @@ def record(ask=False):
 
 
 def speak(audio_text):
+    """
+    Uses text-to-speech package to speak the given text input
+    -Generates and audio file with a random name, plays the file, and then deletes the file
+
+    Args:
+        audio_text ([string]): [text to be spoken]
+    """
+
     text_to_speech = gTTS(audio_text)
     rand_num = random.randint(1, 100000)
     audio_file_name = 'audio_file_' + str(rand_num) + '.mp3'
@@ -48,6 +64,12 @@ def speak(audio_text):
 
 
 def respond(voice_data):
+    """
+    Detemines the command and responds with specific actions and replies
+
+    Args:
+        voice_data ([text]): [text from recording of user's voice]
+    """
 
     if ('OK Mac' in voice_data) or ('hey Mac' in voice_data):
         speak('Hi, how can I help?')
@@ -107,6 +129,7 @@ def respond(voice_data):
 time.sleep(1)
 speak('Hi, how can I help?')
 
+# Runs indefinitely on loop
 while 1:
     voice_data = record()
     respond(voice_data)
