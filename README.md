@@ -1,5 +1,5 @@
 # Speech Assistant
-> Basic speech assistant service that uses google speech recognition
+> Basic speech assistant that uses Google speech recognition
 
 ## Table of contents
 * [General info](#general-info)
@@ -32,11 +32,12 @@ $ conda env create -n conda-env -f /path/to/environment.yml
 List of features ready and TODOs for future development
 * Basic commands
     * Time
-    * Search
-    * Location search
+    * Search (Google, YouTube)
+    * Directions
 
 To-do list:
 * Add verification feature
+* Wake word detection
 * Additional commands
 
 
