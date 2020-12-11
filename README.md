@@ -33,7 +33,7 @@ List of features ready and TODOs for future development
 * Basic commands
     * Time, Date
     * Search (Google, YouTube)
-    * Directions on Google Maps
+    * Directions (Google Maps)
     * Open new tabs
 
 To-do list:
