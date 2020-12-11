@@ -31,9 +31,10 @@ $ conda env create -n conda-env -f /path/to/environment.yml
 ## Features
 List of features ready and TODOs for future development
 * Basic commands
-    * Time
+    * Time, Date
     * Search (Google, YouTube)
-    * Directions
+    * Directions on Google Maps
+    * Open new tabs
 
 To-do list:
 * Add verification feature
